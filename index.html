@@ -1,5 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap"></link>
     <link rel="stylesheet" href="./styles.css"></link>
   </head>
@@ -15,7 +19,7 @@
           <input id="note-text" placeholder="Take a note..." type="text">
           <div id="form-buttons">
             <button type="submit" id="submit-button">Submit</button>
-            <!-- <button type="button" id="form-close-button">Close</button> -->
+            <button type="button" id="form-close-button">Close</button>
         </div>
     </form>
       </div>
@@ -24,7 +28,20 @@
         <img id="placeholder-logo" src="./pngegg.png">
         <p id="placeholder-text">Notes you add appear here</p>
       </div>
+      <div id="color-tooltip">
+        <div class="color-option" data-color="#fff" id="white"></div>
+        <div class="color-option" data-color="#d7aefb" id="purple"></div>
+        <div class="color-option" data-color="#fbbc04" id="orange"></div>
+        <div class="color-option" data-color="#a7ffeb" id="teal"></div>
+      </div>
     </main>
+    <div class="modal">
+        <div class="modal-content">
+           <input class="modal-title" placeholder="Title" type="text">   
+           <input class="modal-text" placeholder="Take a note..." type="text">   
+           <span class="modal-close-button">Close</span>
+         </div>    
+     </div>  
     <script src="./index.js"></script>
   </body>
 </html>

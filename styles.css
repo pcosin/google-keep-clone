@@ -32,7 +32,6 @@
   #placeholder-logo {
     height: 120px;
     margin: 20px;
-    opacity: 0.1;
     width: 120px;
   }
   
@@ -285,7 +284,15 @@
     color: #202124;
     opacity: 0.71;
   }
-  
+
+  .btn-delete {
+    border: none;
+  }
+
+  .btn-delete:hover {
+    fill: #f44336;
+    transform: scale(1.15);
+}
   .toolbar-color-modal {
     display: none;
   }
